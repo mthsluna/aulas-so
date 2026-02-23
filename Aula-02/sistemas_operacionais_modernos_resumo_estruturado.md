@@ -27,7 +27,7 @@
 * [Capítulo 10 — Estudo de Caso: UNIX, Linux e Android](#capítulo-10--estudo-de-caso-unix-linux-e-android)
 * [Capítulo 11 — Estudo de Caso: Windows 8](#capítulo-11--estudo-de-caso-windows-8)
 * [Capítulo 12 — Projeto de Sistemas Operacionais](#capítulo-12--projeto-de-sistemas-operacionais)
-* [Capítulo 13 — Leituras Complementares e Referências](#capítulo-13--leituras-complementares-e-referências)
+* [Capítulo 13 — Leituras Complementares, Referências e Perspectivas Avançadas](#capítulo-13--leituras-complementares-referências-e-perspectivas-avançadas)
 * [Considerações Finais](#considerações-finais)
 
 ---
