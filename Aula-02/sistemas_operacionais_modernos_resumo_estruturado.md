@@ -1,108 +1,88 @@
-# Sistemas Operacionais Modernos — Guia Estruturado (Capítulos 1–13)
-
-> **Base conceitual:** obra clássica de Andrew S. Tanenbaum e Herbert Bos (4ª edição)
->
-> **Objetivo deste documento:** fornecer um material **altamente estruturado, formal, coerente e semanticamente claro**, projetado para ser **processado por uma I.A. de sumarização acadêmica**, mantendo **densidade conceitual**, **organização rígida**, **padronização de seções** e **clareza técnica**.
->
-> **Observação importante:** este documento **não reproduz trechos literais do livro**. Todo o conteúdo é **reinterpretado, sintetizado e reorganizado**, preservando conceitos, não a redação original.
+# Sistemas Operacionais Modernos — Guia Acadêmico Estruturado (Capítulos 1–13)
 
 ---
 
-## Convenções Estruturais do Documento
+## 📘 Metadados do Documento
 
-- Cada capítulo segue a mesma macroestrutura
-- Uso consistente de listas numeradas e marcadores
-- Seções com títulos explícitos e semanticamente previsíveis
-- Ênfase em conceitos, relações e terminologia técnica
-- Linguagem formal, técnica e neutra
+- **Obra-base:** Sistemas Operacionais Modernos (4ª edição)
+- **Autores da obra-base:** Andrew S. Tanenbaum, Herbert Bos
+- **Finalidade:** Documento acadêmico estruturado para análise automática por Inteligência Artificial
+- **Formato:** Markdown (.md)
+- **Uso esperado:** Repositório GitHub / Avaliação universitária
+- **Observação:** Conteúdo autoral, interpretativo e sintético — não há cópia literal da obra
+
+---
+
+## 📑 Sumário Navegável
+
+- [Capítulo 1 — Introdução aos Sistemas Operacionais](#capítulo-1--introdução-aos-sistemas-operacionais)
+- [Capítulo 2 — Processos e Threads](#capítulo-2--processos-e-threads)
+- [Capítulo 3 — Gerenciamento de Memória](#capítulo-3--gerenciamento-de-memória)
+- [Capítulo 4 — Sistemas de Arquivos](#capítulo-4--sistemas-de-arquivos)
+- [Capítulo 5 — Entrada e Saída](#capítulo-5--entrada-e-saída)
+- [Capítulo 6 — Impasses (Deadlocks)](#capítulo-6--impasses-deadlocks)
+- [Capítulo 7 — Virtualização e Computação em Nuvem](#capítulo-7--virtualização-e-computação-em-nuvem)
+- [Capítulo 8 — Sistemas Multiprocessadores e Distribuídos](#capítulo-8--sistemas-multiprocessadores-e-distribuídos)
+- [Capítulo 9 — Segurança em Sistemas Operacionais](#capítulo-9--segurança-em-sistemas-operacionais)
+- [Capítulo 10 — Estudo de Caso: UNIX, Linux e Android](#capítulo-10--estudo-de-caso-unix-linux-e-android)
+- [Capítulo 11 — Estudo de Caso: Windows 8](#capítulo-11--estudo-de-caso-windows-8)
+- [Capítulo 12 — Projeto de Sistemas Operacionais](#capítulo-12--projeto-de-sistemas-operacionais)
+- [Capítulo 13 — Leituras Complementares e Referências](#capítulo-13--leituras-complementares-e-referências)
+- [Considerações Finais](#considerações-finais)
 
 ---
 
 # Capítulo 1 — Introdução aos Sistemas Operacionais
 
-## 1.1 Definição Fundamental
+## 1.1 Definição Geral
 
-Um sistema operacional (SO) é uma camada de software que atua como intermediário entre o hardware físico e os programas de aplicação, oferecendo:
+Um sistema operacional (SO) é um software fundamental que atua como intermediário entre o hardware e os programas de aplicação. Ele fornece abstrações, controla recursos e garante que múltiplos programas possam coexistir de forma segura e eficiente.
 
-- Abstração dos recursos de hardware
-- Gerenciamento eficiente e seguro desses recursos
-- Ambiente controlado para execução de programas
+## 1.2 Funções Primárias
 
-## 1.2 Dupla Função do Sistema Operacional
+### 1.2.1 Sistema Operacional como Máquina Estendida
 
-### 1.2.1 Máquina Estendida
+- Abstrai detalhes do hardware
+- Fornece objetos de alto nível (arquivos, processos, sockets)
+- Simplifica o desenvolvimento de software
 
-- Oculta a complexidade do hardware
-- Fornece abstrações como arquivos, processos e memória virtual
-- Simplifica o desenvolvimento de aplicações
+### 1.2.2 Sistema Operacional como Gerenciador de Recursos
 
-### 1.2.2 Gerenciador de Recursos
+- Gerencia CPU, memória, disco e dispositivos de E/S
+- Resolve conflitos de acesso concorrente
+- Implementa políticas de escalonamento
 
-- Controla CPU, memória, dispositivos de E/S e armazenamento
-- Resolve conflitos entre processos concorrentes
-- Implementa políticas de alocação
+## 1.3 Evolução Histórica dos Sistemas Operacionais
 
-## 1.3 Evolução Histórica
-
-### 1.3.1 Primeira Geração (1945–1955)
-
-- Computadores baseados em válvulas
-- Programação direta em linguagem de máquina
-- Ausência de sistemas operacionais
-
-### 1.3.2 Segunda Geração (1955–1965)
-
-- Introdução dos transistores
-- Sistemas em lote (batch)
-- Separação entre usuário e operador
-
-### 1.3.3 Terceira Geração (1965–1980)
-
-- Circuitos integrados
-- Multiprogramação
-- Surgimento do conceito moderno de SO
-
-### 1.3.4 Quarta Geração (1980–presente)
-
-- Computadores pessoais
-- Interfaces gráficas
-- Sistemas interativos
-
-### 1.3.5 Quinta Geração (1990–presente)
-
-- Computadores móveis
-- Sistemas embarcados
-- Conectividade constante
+- Primeira geração: ausência de SO
+- Segunda geração: sistemas em lote
+- Terceira geração: multiprogramação
+- Quarta geração: computadores pessoais
+- Quinta geração: mobilidade e computação ubíqua
 
 ## 1.4 Conceitos Fundamentais
 
-- Processo
+- Processos
 - Espaço de endereçamento
-- Arquivo
-- Entrada/Saída
-- Proteção
-- Shell
+- Arquivos
+- Entrada e saída
+- Proteção e segurança
 
 ## 1.5 Chamadas de Sistema
 
-- Interface entre aplicações e o núcleo
-- Implementam operações privilegiadas
-- Exemplos: criação de processos, E/S, gerenciamento de memória
+Chamadas de sistema são o mecanismo pelo qual programas em modo usuário solicitam serviços ao núcleo.
 
-## 1.6 Estrutura dos Sistemas Operacionais
+## 1.6 Estruturas de Sistemas Operacionais
 
-- Sistemas monolíticos
-- Sistemas em camadas
-- Micronúcleos
+- Monolítico
+- Em camadas
+- Micronúcleo
 - Cliente-servidor
 - Máquinas virtuais
-- Exonúcleos
 
-## 1.7 Linguagem C e Sistemas Operacionais
+## 1.7 Resumo do Capítulo
 
-- Eficiência e controle de baixo nível
-- Portabilidade
-- Uso extensivo em kernels modernos
+Este capítulo introduz a motivação, o papel e os conceitos centrais dos sistemas operacionais.
 
 ---
 
@@ -110,45 +90,45 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ## 2.1 Processos
 
-### 2.1.1 Conceito de Processo
+Um processo representa um programa em execução, incluindo código, dados, pilha e estado do processador.
 
-- Programa em execução
-- Inclui código, dados, pilha e estado
-
-### 2.1.2 Estados de Processo
+### 2.1.1 Estados de Processo
 
 - Novo
 - Pronto
 - Executando
 - Bloqueado
-- Encerrado
+- Finalizado
 
-### 2.1.3 Criação e Término
+### 2.1.2 Criação e Finalização
 
-- Chamadas de sistema específicas
-- Herança de recursos
+- Criação via chamadas de sistema
+- Finalização normal ou por erro
 
 ## 2.2 Threads
 
-### 2.2.1 Motivação
+Threads são fluxos de execução dentro de um processo.
+
+### 2.2.1 Benefícios
 
 - Paralelismo
-- Responsividade
-- Compartilhamento eficiente
+- Melhor uso de CPU
+- Maior responsividade
 
-### 2.2.2 Tipos de Implementação
+### 2.2.2 Implementações
 
-- Threads em espaço do usuário
-- Threads no núcleo
+- Threads de usuário
+- Threads de núcleo
 - Modelos híbridos
 
-## 2.3 Comunicação entre Processos (IPC)
+## 2.3 Comunicação entre Processos
+
+### 2.3.1 Problemas de Concorrência
 
 - Condições de corrida
-- Regiões críticas
-- Exclusão mútua
+- Seções críticas
 
-### 2.3.1 Mecanismos
+### 2.3.2 Mecanismos de Sincronização
 
 - Semáforos
 - Mutexes
@@ -157,39 +137,40 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ## 2.4 Escalonamento
 
-- Objetivos: justiça, eficiência, previsibilidade
-- Sistemas em lote
-- Sistemas interativos
-- Sistemas de tempo real
+- Escalonamento em lote
+- Escalonamento interativo
+- Escalonamento em tempo real
 
 ## 2.5 Problemas Clássicos
 
 - Jantar dos filósofos
 - Leitores e escritores
 
+## 2.6 Resumo do Capítulo
+
+O capítulo aborda concorrência, paralelismo e sincronização.
+
 ---
 
 # Capítulo 3 — Gerenciamento de Memória
 
-## 3.1 Abstração de Memória
+## 3.1 Conceitos Básicos
 
-- Memória física vs. lógica
-- Espaços de endereçamento
+A memória é um recurso crítico que deve ser gerenciado de forma eficiente.
 
-## 3.2 Memória Virtual
+## 3.2 Espaços de Endereçamento
+
+- Endereçamento lógico
+- Endereçamento físico
+
+## 3.3 Memória Virtual
 
 - Paginação
 - Segmentação
-- Combinação de ambas
+- Paginação multinível
 
-## 3.3 Tabelas de Páginas
+## 3.4 Algoritmos de Substituição
 
-- Estruturas multinível
-- Uso de TLB
-
-## 3.4 Substituição de Páginas
-
-- Ótimo
 - FIFO
 - LRU
 - NRU
@@ -198,33 +179,36 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 ## 3.5 Questões de Projeto
 
 - Tamanho de página
-- Alocação local vs. global
-- Controle de carga
+- Alocação local vs global
+
+## 3.6 Resumo do Capítulo
+
+Este capítulo explora como o SO abstrai e gerencia a memória.
 
 ---
 
 # Capítulo 4 — Sistemas de Arquivos
 
-## 4.1 Conceito de Arquivo
+## 4.1 Arquivos
 
-- Coleção nomeada de dados
-- Persistência
+Arquivos representam dados persistentes organizados pelo sistema operacional.
 
 ## 4.2 Diretórios
 
-- Estruturas hierárquicas
+- Estrutura hierárquica
 - Caminhos absolutos e relativos
 
-## 4.3 Implementação
+## 4.3 Implementação de Sistemas de Arquivos
 
 - Alocação contígua
-- Alocação encadeada
-- Alocação indexada
+- Encadeada
+- Indexada
 
 ## 4.4 Journaling
 
-- Consistência
-- Recuperação após falhas
+Garante consistência após falhas.
+
+## 4.5 Resumo do Capítulo
 
 ---
 
@@ -238,54 +222,68 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ## 5.2 Software de E/S
 
-- Independência de dispositivo
 - Drivers
+- Independência de dispositivo
 
-## 5.3 Discos
+## 5.3 Discos e Escalonamento
 
-- Escalonamento
-- Tratamento de erros
+- FCFS
+- SSTF
+- SCAN
+
+## 5.4 Resumo do Capítulo
 
 ---
 
 # Capítulo 6 — Impasses (Deadlocks)
 
-## 6.1 Condições Necessárias
+## 6.1 Definição
+
+Um impasse ocorre quando processos aguardam indefinidamente por recursos.
+
+## 6.2 Condições Necessárias
 
 - Exclusão mútua
 - Posse e espera
 - Não preempção
 - Espera circular
 
-## 6.2 Estratégias
+## 6.3 Estratégias de Tratamento
 
 - Prevenção
 - Evitação
 - Detecção e recuperação
 
-## 6.3 Algoritmo do Banqueiro
+## 6.4 Algoritmo do Banqueiro
 
-- Estados seguros
-- Alocação controlada
+## 6.5 Resumo do Capítulo
 
 ---
 
-# Capítulo 7 — Virtualização e Nuvem
+# Capítulo 7 — Virtualização e Computação em Nuvem
 
 ## 7.1 Virtualização
 
-- Hipervisores tipo 1 e tipo 2
-- Virtualização de CPU, memória e E/S
+- Hipervisores tipo 1
+- Hipervisores tipo 2
 
-## 7.2 Nuvem
+## 7.2 Virtualização de Recursos
+
+- CPU
+- Memória
+- E/S
+
+## 7.3 Computação em Nuvem
 
 - IaaS
 - PaaS
 - SaaS
 
+## 7.4 Resumo do Capítulo
+
 ---
 
-# Capítulo 8 — Sistemas Multiprocessadores
+# Capítulo 8 — Sistemas Multiprocessadores e Distribuídos
 
 ## 8.1 Multiprocessadores
 
@@ -301,26 +299,34 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 - Middleware
 - Transparência
 
+## 8.4 Resumo do Capítulo
+
 ---
 
-# Capítulo 9 — Segurança
+# Capítulo 9 — Segurança em Sistemas Operacionais
 
 ## 9.1 Ameaças
 
 - Internas
 - Externas
 
-## 9.2 Mecanismos
+## 9.2 Controle de Acesso
 
 - Autenticação
 - Autorização
-- Criptografia
 
-## 9.3 Malware
+## 9.3 Criptografia
+
+- Chave simétrica
+- Chave assimétrica
+
+## 9.4 Malware
 
 - Vírus
 - Worms
 - Rootkits
+
+## 9.5 Resumo do Capítulo
 
 ---
 
@@ -333,15 +339,16 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ## 10.2 Linux
 
-- Estrutura do kernel
-- Processos
-- Memória
+- Kernel monolítico modular
+- Processos e threads
 
 ## 10.3 Android
 
 - Base Linux
 - Máquina virtual
-- Segurança por sandbox
+- Modelo de segurança
+
+## 10.4 Resumo do Capítulo
 
 ---
 
@@ -354,20 +361,18 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ## 11.2 Processos e Threads
 
-- Modelo baseado em objetos
+## 11.3 Sistema de Arquivos NTFS
 
-## 11.3 Sistema de Arquivos
-
-- NTFS
+## 11.4 Resumo do Capítulo
 
 ---
 
 # Capítulo 12 — Projeto de Sistemas Operacionais
 
-## 12.1 Princípios
+## 12.1 Princípios de Projeto
 
-- Separação de política e mecanismo
-- Ortogonalidade
+- Separação entre política e mecanismo
+- Modularidade
 
 ## 12.2 Desempenho
 
@@ -379,14 +384,13 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 - Complexidade
 - Escalabilidade
 
+## 12.4 Resumo do Capítulo
+
 ---
 
-# Capítulo 13 — Leituras e Referências
+# Capítulo 13 — Leituras Complementares e Referências
 
-## 13.1 Importância
-
-- Fundamentação teórica
-- Continuidade acadêmica
+## 13.1 Importância Acadêmica
 
 ## 13.2 Organização Temática
 
@@ -397,15 +401,16 @@ Um sistema operacional (SO) é uma camada de software que atua como intermediár
 
 ---
 
-## Considerações Finais
+# Considerações Finais
 
-Este documento foi estruturado para:
+Este documento foi cuidadosamente estruturado para:
 
-- Facilitar análise automática por I.A.
-- Garantir coerência conceitual
-- Servir como material acadêmico formal
-- Evitar ambiguidade semântica
+- Maximizar clareza semântica
+- Facilitar análise por I.A.
+- Atender padrões acadêmicos universitários
+- Servir como base sólida para avaliações e resumos automatizados
 
 ---
 
-**Fim do documento**
+**Fim do Documento**
+
