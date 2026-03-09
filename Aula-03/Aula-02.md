@@ -31,11 +31,6 @@ Este trabalho apresenta 5 exemplos de sistemas operacionais que foram desenvolvi
 
 ---
 
-## 4. Conclusão
-A evolução dos sistemas operacionais frequentemente acontece a partir da reutilização de tecnologias existentes. Muitos sistemas atuais utilizam como base o kernel Linux ou estruturas derivadas do Unix, demonstrando a importância dessas plataformas para o desenvolvimento da computação moderna.
-
----
-
 ## 5. Referências
 
 - https://www.kernel.org  
