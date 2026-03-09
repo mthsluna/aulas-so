@@ -26,8 +26,7 @@ Este trabalho apresenta **5 sistemas operacionais populares**, suas origens, car
 
 ## 3. Descrição Detalhada dos Sistemas
 
-### Ubuntu
-<img src="./assets/ubuntu.png" width="30" style="vertical-align: middle; margin-right:6px;">  
+### Ubuntu <img src="./assets/ubuntu.png" width="30" style="vertical-align: middle; margin-right:6px;">  
 
 - **Origem:** Debian  
 - **Foco:** Usuários domésticos e servidores  
@@ -37,8 +36,7 @@ Este trabalho apresenta **5 sistemas operacionais populares**, suas origens, car
 
 ---
 
-### Linux Mint
-<img src="./assets/linux-mint.png" width="30" style="vertical-align: middle; margin-right:6px;">  
+### Linux Mint <img src="./assets/linux-mint.png" width="30" style="vertical-align: middle; margin-right:6px;">  
 
 - **Origem:** Ubuntu  
 - **Foco:** Usuários que buscam familiaridade com Windows  
@@ -48,8 +46,7 @@ Este trabalho apresenta **5 sistemas operacionais populares**, suas origens, car
 
 ---
 
-### Android
-<img src="./assets/android.png" width="30" style="vertical-align: middle; margin-right:6px;">  
+### Android <img src="./assets/android.png" width="30" style="vertical-align: middle; margin-right:6px;">  
 
 - **Origem:** Kernel Linux  
 - **Foco:** Dispositivos móveis (smartphones, tablets, wearables)  
@@ -59,8 +56,7 @@ Este trabalho apresenta **5 sistemas operacionais populares**, suas origens, car
 
 ---
 
-### macOS
-<img src="./assets/macos.png" width="30" style="vertical-align: middle; margin-right:6px;">  
+### macOS <img src="./assets/macos.png" width="30" style="vertical-align: middle; margin-right:6px;"> 
 
 - **Origem:** Unix / NeXTSTEP  
 - **Foco:** Computadores Apple (MacBook, iMac, Mac mini)  
@@ -70,8 +66,7 @@ Este trabalho apresenta **5 sistemas operacionais populares**, suas origens, car
 
 ---
 
-### Chrome OS
-<img src="./assets/chromeos.png" width="30" style="vertical-align: middle; margin-right:6px;">  
+### Chrome OS <img src="./assets/chromeos.png" width="30" style="vertical-align: middle; margin-right:6px;">  
 
 - **Origem:** Linux / Gentoo  
 - **Foco:** Computadores leves, educação e internet-first  
