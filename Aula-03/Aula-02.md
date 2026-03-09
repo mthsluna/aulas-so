@@ -20,7 +20,7 @@ Muitos sistemas operacionais são desenvolvidos a partir de outros sistemas já 
 
 ## 3. Exemplos dos Sistemas Operacionais
 
-### Ubuntu <img src="./assets/ubuntu.png" width="200">
+### Ubuntu <img src="./assets/ubuntu.png" width="50">
 
 Sistema operacional baseado no Debian, focado em facilidade de uso e muito utilizado em desktops e servidores.
 
