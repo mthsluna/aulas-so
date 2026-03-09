@@ -1,65 +1,81 @@
 # Pesquisa: Sistemas Operacionais Baseados em Outros Sistemas
 
 ## 1. Introdução
-Muitos sistemas operacionais são desenvolvidos a partir de outros sistemas já existentes, reutilizando seu kernel, arquitetura ou estrutura. Isso permite aproveitar tecnologias já consolidadas, reduzir o tempo de desenvolvimento e melhorar a compatibilidade com hardware e softwares.
 
-Este trabalho apresenta 5 exemplos de sistemas operacionais que foram desenvolvidos a partir de outros sistemas, além de uma tabela comparativa destacando suas principais diferenças.
+Muitos sistemas operacionais são desenvolvidos a partir de outros sistemas já existentes, reutilizando seu kernel, arquitetura ou estrutura. Isso permite aproveitar tecnologias já consolidadas, reduzir o tempo de desenvolvimento e melhorar a compatibilidade com hardware e softwares.
 
 ---
 
-## 2. Sistemas Operacionais Pesquisados
+## 2. Sistemas Operacionais Identificados
+
+| Sistema Operacional | Sistema Base    | Tipo de Base                                   | Ano de Lançamento |
+| ------------------- | --------------- | ---------------------------------------------- | ----------------- |
+| Ubuntu              | Debian          | Distribuição Linux baseada no Debian           | 2004              |
+| Linux Mint          | Ubuntu          | Distribuição Linux baseada no Ubuntu           | 2006              |
+| Android             | Linux           | Kernel Linux adaptado para dispositivos móveis | 2008              |
+| macOS               | Unix / NeXTSTEP | Sistema baseado em Unix                        | 2001              |
+| Chrome OS           | Linux / Gentoo  | Sistema baseado em Linux                       | 2011              |
+
+---
+
+## 3. Exemplos dos Sistemas Operacionais
 
 ### Ubuntu
+
 ![Ubuntu](./img/ubuntu.png)
 
-Sistema operacional baseado no Debian, voltado para facilidade de uso e popular em desktops e servidores.
+Sistema operacional baseado no Debian, focado em facilidade de uso e muito utilizado em desktops e servidores.
 
 ---
 
 ### Linux Mint
+
 ![Linux Mint](./img/linux-mint.png)
 
-Distribuição baseada no Ubuntu, conhecida por sua interface amigável e semelhança com o Windows.
+Distribuição baseada no Ubuntu, conhecida por oferecer uma interface amigável e semelhante ao Windows.
 
 ---
 
 ### Android
+
 ![Android](./img/android.png)
 
-Sistema operacional móvel desenvolvido pelo Google, baseado no kernel Linux.
+Sistema operacional móvel desenvolvido pelo Google, baseado no kernel Linux e utilizado em smartphones e tablets.
 
 ---
 
 ### macOS
+
 ![macOS](./img/macos.png)
 
-Sistema operacional da Apple baseado em Unix (derivado do NeXTSTEP).
+Sistema operacional da Apple baseado em Unix, derivado do NeXTSTEP, utilizado em computadores Mac.
 
 ---
 
 ### Chrome OS
+
 ![Chrome OS](./img/chromeos.png)
 
-Sistema operacional desenvolvido pelo Google, baseado em Linux e focado em aplicações web.
+Sistema operacional desenvolvido pelo Google baseado em Linux, projetado para funcionar principalmente com aplicações web.
 
 ---
 
-## 3. Tabela Comparativa
+## 4. Tabela Comparativa
 
-| Sistema Operacional | Sistema Base | Principais Diferenças |
-|---------------------|-------------|----------------------|
-| Ubuntu | Debian | Interface mais amigável, foco em usuários comuns e atualizações frequentes. |
-| Linux Mint | Ubuntu | Interface semelhante ao Windows e softwares pré-instalados. |
-| Android | Linux | Adaptado para dispositivos móveis e interface touchscreen. |
-| macOS | Unix / NeXTSTEP | Integração com hardware Apple e interface própria. |
-| Chrome OS | Linux / Gentoo | Sistema leve focado em navegador e aplicativos web. |
+| Sistema Operacional | Sistema Base    | Principais Diferenças                                      | Tipo de Dispositivo   |
+| ------------------- | --------------- | ---------------------------------------------------------- | --------------------- |
+| Ubuntu              | Debian          | Interface mais amigável e foco em usuários domésticos      | Desktop / Servidor    |
+| Linux Mint          | Ubuntu          | Interface semelhante ao Windows e softwares pré-instalados | Desktop               |
+| Android             | Linux           | Adaptado para dispositivos móveis e interface touchscreen  | Smartphones / Tablets |
+| macOS               | Unix / NeXTSTEP | Integração exclusiva com hardware Apple                    | Computadores Mac      |
+| Chrome OS           | Linux / Gentoo  | Sistema leve focado em navegador e aplicativos web         | Chromebooks           |
 
 ---
 
-## 4. Referências
+## 5. Referências
 
-- https://www.kernel.org  
-- https://www.debian.org  
-- https://ubuntu.com  
-- https://www.android.com  
-- https://www.apple.com/macos
+* https://www.kernel.org
+* https://www.debian.org
+* https://ubuntu.com
+* https://www.android.com
+* https://www.apple.com/macos
