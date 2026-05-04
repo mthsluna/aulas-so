@@ -46,4 +46,3 @@ A instância apresenta um host de alta densidade com **40 núcleos e quase 400 G
 Enquanto o **Render** oferece uma experiência padronizada, previsível e fácil de configurar, o **Railway** se destaca pelo hardware bruto superior do host e pela flexibilidade de custos baseada em demanda. O Railway tende a ser a escolha ideal para desenvolvedores que necessitam de performance imediata e as versões mais recentes de runtimes.
 
 ---
-*Relatório gerado para fins de estudo de Sistemas Operacionais e Infraestrutura Cloud.*
